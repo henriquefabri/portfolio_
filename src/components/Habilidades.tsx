@@ -1,3 +1,4 @@
+import Cartao from './Cartao'
 import type { Habilidade } from '../data/conteudo'
 
 type Props = { habilidades: Habilidade[] }
@@ -9,9 +10,13 @@ export default function Habilidades({ habilidades }: Props) {
       <p className="mb-5 text-sm text-[#68736a]">Tecnologias que estou estudando no momento.</p>
       <ul className="grid gap-3 sm:grid-cols-2">
         {habilidades.map((habilidade) => (
-          <li key={habilidade.nome} className="flex items-center justify-between gap-3 rounded-xl bg-[#f1f5ec] px-4 py-3">
-            <span className="font-medium">{habilidade.nome}</span>
-            <span className="rounded-full bg-white px-3 py-1 text-xs text-[#56704e]">{habilidade.nivel}</span>
+          <li key={habilidade.nome}>
+            <Cartao destaque>
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-medium">{habilidade.nome}</span>
+                <span className="rounded-full bg-white px-3 py-1 text-xs text-[#56704e]">{habilidade.nivel}</span>
+              </div>
+            </Cartao>
           </li>
         ))}
       </ul>

@@ -35,14 +35,15 @@ npm run preview
 - `src/components/Habilidades.tsx`: exibe habilidades e seus níveis.
 - `src/components/Projetos.tsx`: mostra os projetos em cartões.
 - `src/components/Contato.tsx`: botão que mostra ou oculta uma mensagem.
+- `src/components/Cartao.tsx`: componente reutilizável que recebe `children`.
 - `src/components/Rodape.tsx`: créditos da atividade.
 - `src/data/conteudo.ts`: listas e tipos dos projetos e habilidades.
 - `src/index.css`: importação do Tailwind e estilos básicos.
 
 ## Como a atividade atende aos requisitos
 
-- **6 componentes**: Cabecalho, Sobre, Habilidades, Projetos, Contato e Rodape.
-- **Props tipadas**: Habilidades e Projetos recebem suas listas por props TypeScript.
+- **7 componentes**: Cabecalho, Sobre, Habilidades, Projetos, Contato, Rodape e Cartao.
+- **Props tipadas**: todos os componentes recebem props definidas com `type` (incluindo `children` no Cartao).
 - **Listas tipadas**: os tipos `Habilidade` e `Projeto` estão em `conteudo.ts`.
 - **`.map()` e `key`**: usados nas listas de habilidades e cartões de projetos.
 - **Renderização condicional e estado**: no componente Contato, `useState` controla a mensagem e o texto do botão.
@@ -63,6 +64,7 @@ Edite `src/data/conteudo.ts` para mudar projetos e habilidades. Edite o texto em
 - **Projetos:** apresenta meus trabalhos usando cartões criados a partir de uma lista.
 - **Contato:** usa um botão para mostrar ou esconder uma mensagem.
 - **Rodape:** exibe os créditos no final da página.
+- **Cartao:** recebe outros elementos pelo `children` e organiza o visual.
 
 ## Entrega
 

@@ -1,13 +1,15 @@
 import { useState } from 'react'
 
-export default function Contato() {
+type Props = { convite: string }
+
+export default function Contato({ convite }: Props) {
   const [mostrarMensagem, setMostrarMensagem] = useState(false)
 
   return (
     <section id="contato" className="scroll-mt-8 rounded-2xl bg-[#eaf1e3] p-6 sm:p-8">
       <h2 className="mb-2 text-xl font-bold text-[#345b38]">Contato</h2>
       <p className="mb-4 text-sm leading-6 text-[#586958]">
-        Quer conversar sobre tecnologia ou algum projeto? Você pode entrar em contato comigo.
+        {convite}
       </p>
       <button
         type="button"
