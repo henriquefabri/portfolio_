@@ -23,20 +23,14 @@ export const habilidades: Habilidade[] = [
 export const projetos: Projeto[] = [
   {
     id: 1,
-    titulo: 'Site da LAIKA',
-    descricao: 'Uma página para apresentar o time de basquete, os jogadores e os títulos.',
-    tecnologia: 'Web',
+    titulo: 'SupNews',
+    descricao: 'Sistema que desenvolvi para organizar notícias e atualizações importantes para uma equipe de suporte, facilitando a consulta e o compartilhamento de informações.',
+    tecnologia: 'Sistema web',
   },
   {
     id: 2,
-    titulo: 'Atividades de Grafos',
-    descricao: 'Exercícios da faculdade com vértices, arestas e buscas em Java.',
-    tecnologia: 'Java',
-  },
-  {
-    id: 3,
-    titulo: 'Projeto de Interface Web',
-    descricao: 'Prática de criação de páginas e organização de componentes.',
-    tecnologia: 'Angular',
+    titulo: 'Plataforma de Jiu-Jitsu',
+    descricao: 'Plataforma para ajudar uma equipe de Jiu-Jitsu a organizar seus alunos, com área de acesso e recursos voltados ao acompanhamento de pagamentos.',
+    tecnologia: 'Sistema web',
   },
 ]

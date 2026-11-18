@@ -7,9 +7,9 @@ export default function Projetos({ projetos }: Props) {
     <section id="projetos" className="scroll-mt-8">
       <div className="mb-5">
         <h2 className="text-xl font-bold text-[#345b38]">Meus projetos</h2>
-        <p className="mt-2 text-sm text-[#68736a]">Algumas atividades e ideias que desenvolvi durante meus estudos.</p>
+        <p className="mt-2 text-sm text-[#68736a]">Dois projetos que venho desenvolvendo para colocar meus conhecimentos em prática.</p>
       </div>
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2">
         {projetos.map((projeto) => (
           <article key={projeto.id} className="rounded-2xl border border-[#e5e9df] bg-white p-6 transition-shadow hover:shadow-md">
             <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-xl bg-[#e5eddb] text-lg font-bold text-[#496a40]">
