@@ -36,7 +36,7 @@ npm run preview
 - `src/components/Projetos.tsx`: mostra os projetos em cartões.
 - `src/components/Contato.tsx`: botão que mostra ou oculta uma mensagem.
 - `src/components/Cartao.tsx`: componente reutilizável que recebe `children`.
-- `src/components/Rodape.tsx`: créditos da atividade.
+- `src/components/Rodape.tsx`: crédito discreto com nome e ano.
 - `src/data/conteudo.ts`: listas e tipos dos projetos e habilidades.
 - `src/index.css`: importação do Tailwind e estilos básicos.
 
@@ -47,7 +47,7 @@ npm run preview
 - **Listas tipadas**: os tipos `Habilidade` e `Projeto` estão em `conteudo.ts`.
 - **`.map()` e `key`**: usados nas listas de habilidades e cartões de projetos.
 - **Renderização condicional e estado**: no componente Contato, `useState` controla a mensagem e o texto do botão.
-- **Tailwind e responsividade**: a página se adapta ao celular e ao computador; os projetos ficam em 1 coluna no celular e 3 colunas em telas maiores; as habilidades ficam em 1 ou 2 colunas.
+- **Tailwind e responsividade**: a página se adapta ao celular e ao computador; os projetos ficam em 1 coluna no celular e 2 colunas em telas maiores; as habilidades ficam em 1 ou 2 colunas.
 - **Hover**: os cartões de projetos ganham sombra ao passar o mouse.
 - **Ordem de títulos**: `h1` no cabeçalho principal, `h2` nas seções e `h3` nos projetos.
 - **Acessibilidade**: menu com descrição, botão acessível por teclado e `aria-expanded`.
@@ -63,12 +63,12 @@ Edite `src/data/conteudo.ts` para mudar projetos e habilidades. Edite o texto em
 - **Habilidades:** apresenta, em uma lista, as tecnologias e meu nível em cada uma.
 - **Projetos:** apresenta meus trabalhos usando cartões criados a partir de uma lista.
 - **Contato:** usa um botão para mostrar ou esconder uma mensagem.
-- **Rodape:** exibe os créditos no final da página.
+- **Rodape:** exibe apenas nome e ano no fim da página.
 - **Cartao:** recebe outros elementos pelo `children` e organiza o visual.
 
 ## Entrega
 
-O histórico Git do projeto tem 3 commits simples. Para enviar conforme a atividade, crie um **repositório público no GitHub**, envie o código e coloque o link no **AVA até o início da aula de 19/11**. O ZIP sozinho não substitui o link do repositório solicitado pelo professor.
+O histórico Git do projeto contém commits com as etapas de desenvolvimento e atualização. Para enviar conforme a atividade, crie um **repositório público no GitHub**, envie o código e coloque o link no **AVA até o início da aula de 19/11**. O ZIP sozinho não substitui o link do repositório solicitado pelo professor.
 
 Comandos para publicar em um repositório novo (substitua a URL pela sua):
 
